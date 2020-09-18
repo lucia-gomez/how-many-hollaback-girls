@@ -15,7 +15,6 @@
   </div>
   <form class="form-inline">
     <input type="number" class="form-control mr-sm-1" id="time" min="0" name="time">
-    <!-- <input type="number" id="time" name="time" class="form-control" min="0"> -->
     <select id="unit" name="unit" class="custom-select mr-sm-2">
       <option value="1">Seconds</option>
       <option value="60">Minutes</option>
@@ -26,12 +25,10 @@
   </form>
   <h1 id="result"></h1>
 
-
   <script>
     function convert() {
       const time = document.getElementById("time").value;
       const seconds = document.getElementById("unit").value;
-      console.log(time, seconds);
       document.getElementById("result").innerHTML = (time * seconds / 199).toFixed(3);
     }
   </script>

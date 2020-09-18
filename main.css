@@ -49,7 +49,3 @@ h2 {
 .form-inline {
   display: inline;
 }
-
-.form-inline.form-control {
-  width: 100px;
-}
