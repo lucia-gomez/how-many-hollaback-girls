@@ -3,12 +3,12 @@ body {
   background-color: #444239;
   background-image: url('assets/bananas.jpg');
   background-size: cover;
+  color: white;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
 h1, h2 {
-  color: white;
   font-family: 'Roboto', sans-serif;
   text-shadow: 10px 10px 5px black;
 }
@@ -21,10 +21,17 @@ h2 {
   font-size: 8vh;
 }
 
-.title h1, h2{
-  margin: 0px;
+p {
+  padding-top: 10px;
+}
+
+.title {
   position: relative;
   top: 5vh;
+}
+
+.title h1, h2{
+  margin: 0px;
 }
 
 #result {
