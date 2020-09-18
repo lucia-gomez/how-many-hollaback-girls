@@ -10,26 +10,34 @@
 
 <body>
   <div class='title'>
-    <h2>How Many</h2>
-    <h1>Hollaback Girls?</h1>
+    <!-- <h2>How Many</h2> -->
+    <h1>How Many Hollaback Girls?</h1>
   </div>
   <form class="form-inline">
     <input type="number" class="form-control mr-sm-1" id="time" min="0" name="time">
     <select id="unit" name="unit" class="custom-select mr-sm-2">
-      <option value="1">Seconds</option>
-      <option value="60">Minutes</option>
-      <option value="3600">Hours</option>
-      <option value="86400">Days</option>
+      <option value=1>Seconds</option>
+      <option value=60>Minutes</option>
+      <option value=3600>Hours</option>
+      <option value=86400>Days</option>
+      <option value=604800>Weeks</option>
+      <option value=31536000>Years</option>
     </select>
     <button onClick="convert()" class="btn btn-primary" type="button">Calculate</button>
   </form>
   <h1 id="result"></h1>
 
+  <audio controls autoplay loop>
+    <source src="./assets/hollaback-girl.mp3">
+  </audio>
+
   <script>
     function convert() {
       const time = document.getElementById("time").value;
       const seconds = document.getElementById("unit").value;
-      document.getElementById("result").innerHTML = (time * seconds / 199).toFixed(3);
+      const result = time * seconds / 200;
+      const displayResult = result.toFixed(Number.isInteger(result) ? 0 : 3);
+      document.getElementById("result").innerHTML = displayResult;
     }
   </script>
 </body>
