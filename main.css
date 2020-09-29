@@ -3,6 +3,7 @@ body {
   background-color: #444239;
   background-image: url('assets/bananas.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   font-family: 'Lato', sans-serif;
   text-align: center;
