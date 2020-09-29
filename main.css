@@ -49,6 +49,14 @@ p {
   background-color: #128b4f;
 }
 
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #097740;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
 .custom-select {
   width: 100px;
 }
@@ -59,7 +67,7 @@ p {
   top: 15vh;
 }
 
-audio {
+.bottom-controls {
   position: absolute;
   bottom: 5vh;
   margin-left: auto;
@@ -67,4 +75,5 @@ audio {
   left: 0;
   right: 0;
   text-align: center;
+}
 }
