@@ -6,6 +6,7 @@ body {
   color: white;
   font-family: 'Lato', sans-serif;
   text-align: center;
+  margin: 0px 20px;
 }
 
 h1, h2 {
@@ -77,3 +78,19 @@ p {
   text-align: center;
 }
 }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 8vh;
+  }
+  .form-inline {
+    top: 8vh;
+  }
+  .form-control {
+    margin: auto;
+    width: auto;
+  }
+  #result {
+    font-size: 20vw;
+    top: 15vh;
+  }
+} 
